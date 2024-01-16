@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devzstore | Developers</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><img src="images/logo-1-1.png" class="main-logo" width="150" alt="Awesome Image"> </a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html">features</a>
+        <!-- <a href="#about">about</a> -->
+        <!-- <a href="#usage">tutorials</a> -->
+        <a href="index.html">pricing</a>
+        <a href="developers.html">developers</a>
+        <a href="index.html">contact</a>
+    </nav>
+
+</header>
+
+
+<section class="features" id="features">
+
+
+    <div class="box-container">
+        <br>
+        <br>
+
+        <br>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    </div>
+
+    <h1 class="heading">About Developers</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <!-- <i class="fas fa-magic"></i>  -->
+            <img src="images/nikzdevz.png" alt="">
+            <h3>Nikhil Kumar Gupta</h3>
+            <p> <b> Nikhil Kumar Gupta </b> aka <b>nikzdevz</b>, a highly skilled Android App developer with over 3 years of experience & proud creator of Webr Browser with over 500+ downloads on Google Playstore. He has crafted elegant UI designs which is not only stunning but also aesthetically pleasing. He has 3+ years of experience working on Kodular, created & sold over 30 extensions. He has a community on App Inventor. He is always updated with the latest trends in the market & committed to providing top-quality industry-grade applications to his clients.</p>
+        </div>
+        <div class="box">
+            <!-- <i class="fas fa-globe"></i> -->
+            <img src="images/Umar Ali.png" alt="">
+            <h3>Umar Ali</h3>
+            <p> <b> Umar Ali </b> aka <b>zer0dayz</b> is a highly talented developer. He has crafted several beautiful android apps with immense attention to detail to provide high-quality work in the tech industry. He strictly implements clean coding practices to provide top-notch, well-documented work that shows his commitment to quality.
+              <br>  <br> <br>
+              <br>
+              <br> LinkedIn Profile : <a href="https://www.linkedin.com/in/zer0dayz/">Check Out</a></p>
+        </div>
+        
+        <div class="box">
+            <!-- <i class="fas fa-globe"></i> -->
+            <img src="images/pragyasingh.jpg" alt="">
+            <h3>Pragya Singh</h3>
+            <p> <b> Pragya Singh </b> is a Front-End Developer. He has crafted several beautiful android apps with immense attention to detail to provide high-quality work in the tech industry. He strictly implements clean coding practices to provide top-notch, well-documented work that shows his commitment to quality.
+              <br>  <br> <br>
+              <br>
+              <br> LinkedIn Profile : <a href="https://www.linkedin.com/in/pragya-singh-93302420a">Check Out</a></p>
+        </div>
+        
+
+    </div>
+
+</section>
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.youtube.com/channel/UCtu7oImgr7JB2WL_VrIJi4Q" class="fab fa-youtube" target="_blank"></a>
+        <a href="mailto:nikzdreamer2001@gmail.com" class="fa fa-envelope" target="_blank"></a>
+        <a href="https://www.instagram.com/itz_mr_nikhil/" class="fab fa-instagram" target="_blank"></a>
+        <a href="https://t.me/nikzdezv" class="fab fa-telegram" target="_blank"></a>
+    </div>
+
+    <h1 class="credit"> copyright &copy; <span> devzstore </span> . all rights reserved! | <a href="terms_and_conditions.html" class="credit" target="_blank">terms of use</a>  | <a href="privacy.html" class="credit" target="_blank">updated privacy policy</a>  </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+<!-- script part  -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".image-slider", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+    },
+    loop:true,
+    autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+    },
+});    
+
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+</script>
+</body>
+</html>
